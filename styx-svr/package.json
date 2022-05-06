@@ -1,0 +1,22 @@
+{
+  "name": "styx",
+  "private": true,
+  "scripts": {
+    "dev": "deno run --allow-net src/server.ts",
+    "compile": "deno compile src/server.ts",
+    "buildimage": "docker build . -t breadalbane-svr:dev",
+    "just-db": "docker-compose -f ../docker-compose.yaml up --detach mongodb",
+    "deploy": "docker-compose -f ../docker-compose.yaml down && docker-compose  -f ../docker-compose.yaml up --detach",
+    "kill": "docker-compose -f ../docker-compose.yaml down"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5",
+    "typescript-deno-plugin": "^1.31.0",
+    "eslint": "7.23.0",
+    "eslint-config-prettier": "^8.3.0"
+  },
+  "dependencies": {
+    "@projectstorm/react-diagrams": "^6.7.0"
+  }
+}

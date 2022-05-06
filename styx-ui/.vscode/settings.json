@@ -1,0 +1,22 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  // "eslint.codeActionsOnSave.mode": "all",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "files.exclude": {
+    "node_modules/": true,
+    "yarn.lock": true,
+    ".gitignore": true,
+    ".next/": true,
+    ".eslintrc.json": true,
+    ".prettierrc.json": true,
+    "package-lock.json": true,
+    "tsconfig.json": true,
+    "next-env.d.ts": true,
+    "next.config.js": true
+  }
+}

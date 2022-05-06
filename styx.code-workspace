@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      // Source code
+      "name": "UI",
+      "path": "styx-ui"
+    },
+    {
+      // Docs and release notes
+      "name": "Server",
+      "path": "styx-svr"
+    }
+  ],
+  "settings": {
+    "deno.lint": true,
+    "deno.unstable": true
+  }
+}
